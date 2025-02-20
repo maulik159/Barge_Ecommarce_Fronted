@@ -36,6 +36,24 @@ function Header() {
             <img src={PageIndex.Svg.logo} alt="logo" className="header-logo" />
           </div>
           <div className="header-profile-sec">
+          <div className="subscribe-main">
+                    <div className="input-wrapper ">
+                      <div className="position-relative">
+                        <img
+                          src={PageIndex.Png.search}
+                          alt="email"
+                          className="email-ic"
+                        />
+                        <input
+                          type="text"
+                          name="email"
+                          className="custom-input"
+                          placeholder="Search product.."
+                        />
+                      </div>
+                    </div>
+                    
+                  </div>
             <div className="profile-img-sec">
               <img
                 src={PageIndex.Png.avtar}

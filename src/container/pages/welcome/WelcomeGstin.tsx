@@ -2,12 +2,16 @@ import Index from "../../Index";
 import PageIndex from "../../PageIndex";
 
 function WelcomeGstin() {
+  const navigate = Index.useNavigate();
   return (
     <>
       <div className="user-main name-sec">
         <div className="cus-container position-relative">
-            <div className="back-btn-sec">
-            <img src={PageIndex.Png.leftArrow} alt="leftArrow" className="back-arrow" />
+            <div className="back-btn-sec" >
+            <img src={PageIndex.Png.leftArrow} alt="leftArrow" className="back-arrow" 
+             onClick={() => {
+              navigate("/user/welcome-name");
+            }}/>
             </div>
           <div className="welcome-sec">
             
@@ -30,7 +34,11 @@ function WelcomeGstin() {
                 />
               </div>
               <div className="btn-sec">
-              <Index.Button className="main-btn">Continue</Index.Button>
+              <Index.Button className="main-btn"
+              onClick={() => {
+                navigate("/user/welcome-form");
+              }}
+              >Continue</Index.Button>
               </div>
             </Index.Form>
             </div>

@@ -1,6 +1,7 @@
 import Index from "../../Index";
 
 function WelcomeName() {
+  const navigate = Index.useNavigate();
   return (
     <>
       <div className="user-main name-sec">
@@ -25,7 +26,11 @@ function WelcomeName() {
                 />
               </div>
               <div className="btn-sec">
-              <Index.Button className="main-btn">Continue</Index.Button>
+              <Index.Button className="main-btn" 
+               onClick={() => {
+                navigate("/user/welcome-gstin");
+              }}
+              >Continue</Index.Button>
               </div>
             </Index.Form>
             </div>

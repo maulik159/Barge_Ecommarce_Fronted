@@ -6,7 +6,7 @@ function Otp() {
     <>
     <div className="login-wrapper">
         <div className="login-left cus-center">
-            <img src={PageIndex.Png.leftArrow} alt="leftArrow" className="back-arrow" />
+            {/* <img src={PageIndex.Png.leftArrow} alt="leftArrow" className="back-arrow" /> */}
           <div className="login-left-main">
             <h1 className="auth-title">Enter OTP</h1>
             <Index.Form>

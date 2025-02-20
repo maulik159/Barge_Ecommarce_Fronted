@@ -2,6 +2,7 @@ import PageIndex from "../../PageIndex";
 import Index from "../../Index";
 
 function ImpaCode() {
+  const navigate = Index.useNavigate();
   return (
     <>
       <div className="user-main">
@@ -35,6 +36,7 @@ function ImpaCode() {
                         </div>
                       </div>
                     </div>
+                    <div className="prod-scroll">
                     <div className="product-sec">
                       <div className="product-box">
                         <div className="product-left">
@@ -234,50 +236,8 @@ function ImpaCode() {
                           />
                         </div>
                       </div>
-                      <div className="product-box">
-                        <div className="product-left">
-                          <Index.Form.Check
-                            type="checkbox"
-                            className="cus-checkbox d-flex"
-                          />
-                          <img
-                            src={PageIndex.Png.dummy}
-                            alt="product"
-                            className="prod-img"
-                          />
-                          <p className="product-name">Green Sweater</p>
-                        </div>
-                        <div className="product-right">
-                          <p className="code-text">Code : sswew2</p>
-                          <img
-                            src={PageIndex.Png.view}
-                            alt="view"
-                            className="view-ic"
-                          />
-                        </div>
-                      </div>
-                      <div className="product-box">
-                        <div className="product-left">
-                          <Index.Form.Check
-                            type="checkbox"
-                            className="cus-checkbox d-flex"
-                          />
-                          <img
-                            src={PageIndex.Png.dummy}
-                            alt="product"
-                            className="prod-img"
-                          />
-                          <p className="product-name">Green Sweater</p>
-                        </div>
-                        <div className="product-right">
-                          <p className="code-text">Code : sswew2</p>
-                          <img
-                            src={PageIndex.Png.view}
-                            alt="view"
-                            className="view-ic"
-                          />
-                        </div>
-                      </div>
+                     
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -442,7 +402,11 @@ function ImpaCode() {
                         </div>
                       </div>
                       <div className="btn-sec">
-                        <Index.Button className="main-btn">Request For Quotation</Index.Button>
+                        <Index.Button className="main-btn"
+                        onClick={() => {
+                          navigate("/user/my-quotations");
+                        }}
+                        >Request For Quotation</Index.Button>
                       </div>
                     </div>
                   </div>

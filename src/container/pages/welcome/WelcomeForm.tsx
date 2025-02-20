@@ -2,6 +2,7 @@ import PageIndex from "../../PageIndex";
 import Index from "../../Index";
 
 function WelcomeForm() {
+  const navigate = Index.useNavigate();
   return (
     <>
       <div className="user-main">
@@ -11,6 +12,9 @@ function WelcomeForm() {
               src={PageIndex.Png.leftArrow}
               alt="leftArrow"
               className="back-arrow"
+              onClick={() => {
+                navigate("/user/welcome-gstin");
+              }}
             />
           </div>
           <div className="welcome-sec">
@@ -97,7 +101,11 @@ function WelcomeForm() {
                   <Index.Col xs={12} md={12}>
                     <div className="btn-sec form-btn-sec">
                     <Index.Button className="main-btn border-btn">Edit</Index.Button> 
-                    <Index.Button className="main-btn">Continue</Index.Button> 
+                    <Index.Button className="main-btn"
+                     onClick={() => {
+                      navigate("/user/impa-code");
+                    }}
+                    >Continue</Index.Button> 
                     </div>
                   </Index.Col>
                 </Index.Row>
