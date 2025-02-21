@@ -26,6 +26,7 @@ import doller from "./images/png/doller.png";
 import dollerSign from "./images/png/dollar-sign.png";
 import more from "./images/png/more.png";
 import downRightArrow from "./images/png/down-right-arrow.png";
+import list from "./images/png/list.png";
 
 const Png = {
   
@@ -57,6 +58,7 @@ const Png = {
     dollerSign,
     more,
     downRightArrow,
+    list,
 };
 
 export default Png;

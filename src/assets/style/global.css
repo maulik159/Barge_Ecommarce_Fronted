@@ -329,7 +329,7 @@ width: 100%;
 .checkbox-wrapper .cus-checkbox{
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 }
 .cus-checkbox .form-check-input:focus{
   box-shadow: none;
@@ -452,12 +452,21 @@ gap: 100px;
 }
 .footer-list-item .footer-link,
 .footer-privacy-sec .footer-link{
-list-style: none;
-font-size: 14px;
-line-height: 21px;
-font-family: 'Poppins-Regular';
-color: var(--gray-color);
-text-decoration: none;
+  list-style: none;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: 'Poppins-Regular';
+  color: var(--gray-color);
+  text-decoration: none;
+  transition: .3s ease all;
+  -webkit-transition: .3s ease all;
+  -moz-transition: .3s ease all;
+  -ms-transition: .3s ease all;
+  -o-transition: .3s ease all;
+}
+.footer-list-item .footer-link:hover,
+.footer-privacy-sec .footer-link:hover{
+  color: var(--primary-color);
 }
 .footer-link-sec .footer-list{
 margin: 0;
@@ -1588,5 +1597,19 @@ text-align: right;
   max-height: calc(100vh - 103px);
   overflow-y: scroll;
   overflow-x: hidden;
+}
+.List-head-btn .list-btn{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  font-size: 14px;
+    line-height: 18px;
+    font-family: 'Poppins-Medium';
+    color: var(--gray-color);
+}
+.list-btn .list-ic{
+width: 20px;
+filter: brightness(0) saturate(100%) invert(73%) sepia(46%) saturate(6032%) hue-rotate(177deg) brightness(90%) contrast(90%);
 }
   /* Dashboard css End */

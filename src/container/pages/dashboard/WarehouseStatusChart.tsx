@@ -9,7 +9,7 @@ function WarehouseStatusChart() {
           series: [75], // Percentage value
           chart: {
             type: 'radialBar',
-            height: 450
+            height: 350
           },
           plotOptions: {
             radialBar: {

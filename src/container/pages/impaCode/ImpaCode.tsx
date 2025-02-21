@@ -10,7 +10,7 @@ function ImpaCode() {
           <div className="impacode-wrapper">
             <Index.Row>
               <Index.Col xs={12} md={6}>
-                <div className="main-card">
+                <div className="main-card admin-card">
                   <div className="title-sec">
                     <h6 className="main-title">IMPA Code</h6>
                     <p className="main-sub-title common-text">
@@ -243,7 +243,7 @@ function ImpaCode() {
                 </div>
               </Index.Col>
               <Index.Col xs={12} md={6}>
-              <div className="main-card">
+              <div className="main-card admin-card">
                   <div className="title-sec">
                     <h6 className="main-title">Products Selected</h6>
                    
